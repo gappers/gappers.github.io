@@ -26,7 +26,6 @@ body{
         height: 100% !important;
 }
 
-
 @media (min-width: 1200px) {
     #navbar-top .container {
         width:1170px;
@@ -84,5 +83,5 @@ img.hover:hover {
 
 h1 { padding-top: 75px; }
 h2 { padding-top: 5px; }
-
-footer { margin: 300px 0 70px; font-size: 14px; }
+.map{
+padding-bottom: 150px;}
