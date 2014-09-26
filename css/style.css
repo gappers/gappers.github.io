@@ -1,0 +1,89 @@
+body { 
+	padding-top: 60px;
+	   height: 100%;
+		 }
+
+.footer{
+	padding-top: 30px;
+}
+
+textarea{resize: none}
+
+
+.text-muted {
+color: #777;
+display: flex;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
+font-size:12px;
+}
+
+.google-maps {
+        position: relative;
+        padding-bottom: 45%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+
+@media (min-width: 1200px) {
+    #navbar-top .container {
+        width:1170px;
+    }   
+}
+@media (min-width: 979px) and (max-width: 1200px) {
+    #navbar-top .container {
+        width:960px;
+    }   
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    #navbar-top .container {
+        width:744px;
+    }   
+}
+
+img {
+  border: 0 none;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.row
+{
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.team .col-md-6{
+    text-align: center;
+}
+
+.team .col-md-6 p{
+    text-align: justify;
+}
+.team .skills{
+    padding-bottom: 10px;
+}
+
+.collapsed{
+    display             : inline-block;
+    border              : 0;
+}
+
+.dont-wrap{
+    white-space: normal;
+}
+
+img.hover:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}

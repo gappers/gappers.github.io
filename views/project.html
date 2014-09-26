@@ -1,0 +1,31 @@
+
+<div class="page-header"><h1> O projekte AppMonitor</h1></div>
+<p>Pri vyvíjaní rôznych aplikácií sa občas stane, že je v kóde chyba a prejaví sa až po tom ako sme nástroj nasadili a ľudia ho už začali používať. Aby sme mohli túto chybu opraviť, potrebujeme ju najskôr zachytiť. V aplikáciách však vznikajú aj iné typy udalostí ako len chyby. Častokrát potrebujeme vedieť napríklad koľko používateľov má práve zobrazenú našu stránku, aký je priemerný čas zobrazenia stránky, koľko spotrebováva naša aplikácia pamäte, koľko ľudí kliklo na toto tlačidlo alebo množstvo ďalších udalostí, ktoré si vieme sami definovať a mohli by nás zaujímať pri vývoji aplikácie alebo biznis analýze údajov, ktoré aplikácia produkuje. Pri takýchto udalostiach nás obvykle zaujíma aký je ich aktuálny stav (počet, trvanie, priemerná hodnota ...), ako sa tento stav menil v poslednom čase a ako koreluje sledovaná udalosť s nejakou inou. Toto sa nám obvykle nechce hľadať niekde v logoch a v prípade problému chceme byť o tejto udalosti informovaný v čase, keď nastala.
+</p>
+<p>Cieľom projektu je vytvoriť službu, ktorá by dokázala zachytávať rôzne udalosti, ktoré nastávajú v aplikácii, ako sú napríklad chyby alebo vlastné definované udalosti, monitorovať ich a umožňovať nad nimi robiť základné typy analýz v reálnom čase. Výsledkom projektu by mala byť infraštruktúra na zachytávanie a zbieranie udalostí a rozhranie na ich zobrazovanie a analyzovanie.</p>
+
+	<h2>Prečo?</h2>
+	<p>Možnosť monitorovania svojich nasadených aplikácií a upozornení na problémy vo forme chýb alebo 
+bottleneckov je veľmi vítana funkcionalita pre každého programátora, resp. správcu aplikácie. Po 
+osobnej konzultácii sme boli usmernení v tom, v čom by mala aplikácia vynikať od už existujúcich 
+riešení. Pri nich chýba identifikácia používateľov, ktorí s aplikáciou interagujú. Máme veľké 
+množstvo údajov o používateľoch a ich správaní, dokonca v reálnom čase, ale nevieme priradiť 
+jednotlivé akcie používateľom. Okrem možnosti definície vlastných udalostí vidíme túto možnosť ako 
+veľmi plodnú pre následné využitie. </p>
+
+	<h2>Ako?</h2>
+
+	<p>
+Vedeli by sme tak identifikovať aj vzory správania sa použivateľov v našej aplikácii, čo by viedlo k 
+novým možnostiam jej vylepšenia, prípadne zefektívnenia. Ďalej napr. osobnejší prístup k 
+používateľom aplikácie, kde by sme vedeli pri vhodne zadefinovanej udalosti identifikovať problém, 
+napr. aj neschopnosť/nepochopenie používateľa a následne ho kontaktovať a pomôcť mu alebo sa 
+ospravedlniť za spôsobené problémy, ak chyba nastala na strane servera.
+Jedno z prvotných riešení identifikácie používateľov v aplikáciach kde absentuje používateľský účet, 
+je využitie cookies v prehliadači previazané na rýchle úložisko napr Redis. Pokročilejším spôsobom 
+môže byť identifikácia webového prehliadača, ktorá sa v práci Peter Esckersleyho ukázala ako 
+relatívne funkčná [1].
+<br><br>
+[1] Peter Eckersley. 2010. How unique is your web browser?. In Proceedings of the 10th international 
+conference on Privacy enhancing technologies (PETS'10), Mikhail J. Atallah and Nicholas J. Hopper 
+(Eds.). Springer-Verlag, Berlin, Heidelberg, 1-18.</p>
