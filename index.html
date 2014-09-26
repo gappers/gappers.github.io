@@ -9,6 +9,7 @@
   <base href="/">
 
   <title>Gappers | TP 2014/15</title>
+
   <!-- CSS -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css" rel="stylesheet">
@@ -18,21 +19,14 @@
   <!-- JS -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-
 </head>
 
 <body data-spy='scroll' data-target="#sidebar">
-
-
 <!-- HEADER -->
 <div class="navbar  navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-
   <div class="container-fluid">
-
-
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-example">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -41,11 +35,11 @@
       <a class="navbar-brand" href="/">Gappers <i class="fa fa-coffee"></i></a>
     </div>
 
-    <div id='navbar-collapse' class=" navbar-collapse collapse">
+    <div id='navbar-collapse' class="navbar-example navbar-collapse collapse">
       <div class="container">
 
         <ul class="nav navbar-nav">
-          <li><a href="/">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#project">Projekt</a></li>
           <li><a href="#team">Tím</a></li>
           <li><a href="#docs">Dokumenty</a></li>
@@ -56,15 +50,14 @@
           <li><a href="https://github.com/gappers">Github <i class="fa fa-github"></i></a></li>
           <li><a href="mailto:gappers-tp-fiit@googlegroups.com"><i class="fa fa-envelope"></i> gappers-tp-fiit [at]
             googlegroups.com</a></li>
-
         </ul>
 
       </div>
     </div>
-
   </div>
 </div>
-<div class="jumbotron text-center">
+<section>
+<div id='home' class="jumbotron text-center">
   <h1>
     Tím č.10 - <strong>Gappers</strong><br>
   </h1>
@@ -74,12 +67,14 @@
   <h2> Platforma pre monitorovanie chýb a iných udalostí v aplikácii - AppMonitor</h2>
 
   <p>
-    <a href='/project' class="btn btn-primary dont-wrap btn-lg" role="button">Chcem vedieť viac o aplikácii
+    <a href='#project' class="btn btn-primary dont-wrap btn-lg" role="button">Chcem vedieť viac o aplikácii
       AppMonitor</a>
   </p>
 </div>
+</section>
 
-<h2>
+<div class="container">
+	<h2>
   <center>Náš progres</center>
 </h2>
 <div class="progress">
@@ -87,11 +82,11 @@
     <span class="sr-only">5% Complete</span>
   </div>
 </div>
-
-<div class="container">
 <section>
 
-  <div class="page-header"><h1 id='project'>O projekte AppMonitor</h1></div>
+  <div class="page-header">
+  	<h1 id='project'>O projekte AppMonitor</h1>
+  </div>
   <p>Pri vyvíjaní rôznych aplikácií sa občas stane, že je v kóde chyba a prejaví sa až po tom ako sme nástroj nasadili a
     ľudia ho už začali používať. Aby sme mohli túto chybu opraviť, potrebujeme ju najskôr zachytiť. V aplikáciách však
     vznikajú aj iné typy udalostí ako len chyby. Častokrát potrebujeme vedieť napríklad koľko používateľov má práve
@@ -141,10 +136,10 @@
 <div class="page-header">
   <h1 id="team">Členovia tímu</h1>
 </div>
-<lead>Náš tím pozostáva zo šiestich úspešných členov predchádzajúceho bakalárskeho štúdia na STU, posledný siedmy člen
-  študoval na UNIZA. Tím funguje pod
-  vedením a dohľadom Ing. Jakuba Ševcecha.
-</lead>
+	<lead>Náš tím pozostáva zo šiestich úspešných členov predchádzajúceho bakalárskeho štúdia na STU, posledný siedmy člen
+	  študoval na UNIZA. Tím funguje pod
+	  vedením a dohľadom Ing. Jakuba Ševcecha.
+	</lead>
 </br></br>
 
 <div class='team'>
@@ -170,9 +165,7 @@
     </div>
 
     <div class="col-md-6">
-
       <a href="images/barbora.jpg" data-title="Barbora" data-lightbox="Barbora"><img class='img-circle hover' src="/images/barbora-small.jpg" style="width: 140px; height: 140px;"></a>
-
       <h2 id='team-matej'>Matej Čaja</br>
         <small>Manažment monitorovania</small>
 
@@ -181,24 +174,19 @@
         <span class="label label-primary">Java</span>
         <span class="label label-primary">Ruby on Rails</span>
       </div>
+
       <p>Absolvoval bakalárske štúdium na FIIT STU v Bratislave. V rámci bakalárskeho projektu
         sa venoval téme Personalizované vyhľadávanie v digitálnej knižnici. Venuje sa tvorbe webových
         aplikácií prostredníctvom frameworku Ruby on Rails, profesijné skúsenosti má aj s jazykom Java. V
         projektoch sa podielal na všetkých fázach vývoja softvéru. Vo voľnom čase si rád prehlbuje
         profesijné vedomosti. </p>
     </div>
-
-
   </div>
 
 
   <div class="row">
-
-
     <div class="col-md-6">
-
       <a href="images/barbora.jpg" data-title="Barbora" data-lightbox="Barbora"><img class='img-circle hover' src="/images/barbora-small.jpg" style="width: 140px; height: 140px;"></a>
-
       <h2 id='team-martin'>Martin Číž</br>
         <small> Manažment plánovania</small>
       </h2>
@@ -216,7 +204,6 @@
 
     <div class="col-md-6">
       <a href="images/peter.png" data-title="Peter" data-lightbox="Peter"><img class='img-circle hover' src="/images/peter-small.png" style="width: 140px; height: 140px;"></a>
-
       <h2 id='team-peter'>Peter Kyseľ</br>
         <small> Manažment rizík</small>
       </h2>
@@ -235,9 +222,7 @@
 
   <div class="row">
     <div class="col-md-6">
-
       <a href="images/adam.jpg" data-title="Adam" data-lightbox="Adam"><img id='adam' class='img-circle hover' src="/images/adam-small.jpg" style="width: 140px; height: 140px;"></a>
-
       <h2 id='team-adam'>Adam Lieskovský</br>
         <small> Manažment podpory vývoja a integrácie</small>
       </h2>
@@ -256,9 +241,7 @@
 
 
     <div class="col-md-6">
-
       <a href="images/barbora.jpg" data-title="Barbora" data-lightbox="Barbora"><img class='img-circle hover' src="/images/barbora-small.jpg" style="width: 140px; height: 140px;"></a>
-
       <h2 id='team-daniel'>Daniel Uderman</br>
         <small>Manažment komunikácie</small>
       </h2>
@@ -267,6 +250,7 @@
         <span class="label label-primary">PHP</span>
         <span class="label label-primary">Java</span>
       </div>
+
       <p>Absolvoval bakalárske štúdium na FIIT STU. V rámci bakalárskeho projektu sa
         venoval vysokovýkonnému distribuovanému počítaniu s využitím algoritmov inšpirovaných hmyzom.
         Profesionálne sa venuje tvorbe ecommerce stránok v PHP. V priebehu štúdia získal aj skúsenosti s
@@ -277,11 +261,9 @@
 
   <div class="row">
     <div class="col-md-6">
-
-
       <a href="images/barbora.jpg" data-title="Barbora" data-lightbox="Barbora"><img class='img-circle hover' src="/images/barbora-small.jpg" style="width: 140px; height: 140px;"></a>
-
       <h2 id='team-michal'>Michal Viskup</br>
+
         <small>Manažment kvality a vedúci tímu</small>
       </h2>
       <div class="skills">
@@ -289,6 +271,7 @@
         <span class="label label-primary">C/C++</span>
         <span class="label label-primary">CUDA</span>
       </div>
+
       <p> Absolvoval bakalárske štúdium na FIIT STU. V rámci bakalárskeho projektu sa
         zaoberal využitím grafickej procesorovej jednotky pre podporu výpočtu pri segmentácií obrazu.
         Zaujíma sa o spracovanie obrazu, počítačové videnie a strojové učenie. Pracuje pre spoločnosť
@@ -299,26 +282,41 @@
     </div>
 
     <div class="col-md-6">
-
-
       <a href="images/barbora.jpg" data-title="Barbora" data-lightbox="Barbora"><img class='img-circle hover' src="/images/barbora-small.jpg" style="width: 140px; height: 140px;"></a>
-
       <h2 id='team-jakub'>Jakub Ševcech</br>
         <small>Mentor tímu</small>
       </h2>
 
       </br></br>
-      <p> Lorem ipsuum</p>
+      <p> </p>
     </div>
-
 
   </div>
 </div>
 
 
 <section>
-  <div class="page-header"><h1>Archív dokumentov</h1></div>
-  <h2 id='docs'><i class="fa fa-files-o"></i> Dokumentácia</h2>
+  <div class="page-header"> 
+  	<h1 id='docs'>Archív dokumentov</h1>
+  </div>
+
+
+
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+         <h2>
+  	<i class="fa fa-files-o"></i>Dokumentácia
+  </h2>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        
   <ul>
     <a href="http://github.com/">
       <li>Dokumentácia ZS 2014/15</li>
@@ -330,6 +328,13 @@
       <li>Finálna verzia dokumentácie</li>
     </a>
   </ul>
+      </div>
+    </div>
+  </div>
+
+
+  
+
 
   <h2 id='meetings'><i class="fa fa-file-text-o"></i> Zápisnice</h2>
 
@@ -408,21 +413,20 @@
 
   <h2 id='other'><i class="fa fa-file-code-o"></i> Ostatné</h2>
   <ul>
-    <a href="http://github.com/">
-      <li>TP CUP prezentácia</li>
+    <a href="/docs/gappers-kompetencie_motivacia.pdf">
+      <li>Komeptencie tímu, motivácia pri výbere tém</li>
     </a>
-    <a href="http://github.com/">
-      <li>IIIT SRC</li>
-    </a>
+    
   </ul>
 </section>
-
+<section>
 
 <div class="page-header">
   <h1 id='contact'>Kontaktujte nás</h1>
 </div>
 <p>V prípade akýchkoľvek otázok, nápadov, pripomienok nás môžete kontaktovať na
-  <a href="mailto:gappers-tp-fiit@googlegroups.com"> gappers-tp-fiit[at]googlegroups.com</a>.</p>
+  <a href="mailto:gappers-tp-fiit@googlegroups.com"> gappers-tp-fiit[at]googlegroups.com</a>.
+</p>
 
 
 <h2>Adresa</h2>
@@ -430,12 +434,14 @@
   Slovenská technická univerzita v Bratislave</br>
   Fakulta informatiky a informačných technológií</br>
   Ilkovičova 2</br>
-  842 16 Bratislava 4
+  842 16 Bratisla
+  va 4
 </address>
 <div class="google-maps">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10646.949947576015!2d17.071875999999996!3d48.153866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8bec79f0f3a9%3A0x8b585229fc0ae860!2sFaculty+of+Informatics+and+Information+Technologies+of+Slovak+University+of+Technology!5e0!3m2!1sen!2ssk!4v1410786029145" width="800" height="400" frameborder="0" style="border:0"></iframe>
 </div>
 
+</section>
 
 </div>
 
@@ -462,6 +468,9 @@
     ga('create', 'UA-54973212-1', 'auto');
     ga('send', 'pageview');
 
+</script>
+<script>
+$('body').scrollspy({ target: '.navbar-example' })
 </script>
 </body>
 
