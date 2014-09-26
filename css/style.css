@@ -85,3 +85,6 @@ h1 { padding-top: 75px; }
 h2 { padding-top: 5px; }
 .map{
 padding-bottom: 150px;}
+img.sample-error{
+max-width:50%;
+padding-bottom: 30px;}
