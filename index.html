@@ -78,8 +78,8 @@
   <center>Náš progres</center>
 </h2>
 <div class="progress">
-  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%">
-    <span class="sr-only">5% Complete</span>
+  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%">
+    <span class="sr-only">1% Complete</span>
   </div>
 </div>
 <section>
@@ -111,21 +111,21 @@
     riešení. Pri nich chýba identifikácia používateľov, ktorí s aplikáciou interagujú. Máme veľké
     množstvo údajov o používateľoch a ich správaní, dokonca v reálnom čase, ale nevieme priradiť
     jednotlivé akcie používateľom. Okrem možnosti definície vlastných udalostí vidíme túto možnosť ako
-    veľmi plodnú pre následné využitie. </p>
+    veľmi plodnú pre následné využitie. Vedeli by sme tak identifikovať aj vzory správania sa použivateľov v našej aplikácii, čo by viedlo k
+    novým možnostiam jej vylepšenia, prípadne zefektívnenia. Ďalej napr. osobnejší prístup k
+    používateľom aplikácie, kde by sme vedeli pri vhodne zadefinovanej udalosti identifikovať problém,
+    napr. aj neschopnosť/nepochopenie používateľa a následne ho kontaktovať a pomôcť mu alebo sa
+    ospravedlniť za spôsobené problémy, ak chyba nastala na strane servera. </p>
 
   <h2>Ako?</h2>
 
   <p>
-    Vedeli by sme tak identifikovať aj vzory správania sa použivateľov v našej aplikácii, čo by viedlo k
-    novým možnostiam jej vylepšenia, prípadne zefektívnenia. Ďalej napr. osobnejší prístup k
-    používateľom aplikácie, kde by sme vedeli pri vhodne zadefinovanej udalosti identifikovať problém,
-    napr. aj neschopnosť/nepochopenie používateľa a následne ho kontaktovať a pomôcť mu alebo sa
-    ospravedlniť za spôsobené problémy, ak chyba nastala na strane servera.
     Jedno z prvotných riešení identifikácie používateľov v aplikáciach kde absentuje používateľský účet,
     je využitie cookies v prehliadači previazané na rýchle úložisko napr Redis. Pokročilejším spôsobom
     môže byť identifikácia webového prehliadača, ktorá sa v práci Peter Esckersleyho ukázala ako
-    relatívne funkčná [1].
-    <br><br>
+    relatívne funkčná [1]. Aplikácie plánujeme rozšíriť pomocou generovaného javascriptového kódu, pri vybraných jazykoch, máme v pláne
+    vytvoriť moduly, ktoré by umožňovali monitorovanie aj na najnižšej úrovni. 
+    </p><p>
     [1] Peter Eckersley. 2010. How unique is your web browser?. In Proceedings of the 10th international
     conference on Privacy enhancing technologies (PETS'10), Mikhail J. Atallah and Nicholas J. Hopper
     (Eds.). Springer-Verlag, Berlin, Heidelberg, 1-18.</p>
@@ -299,24 +299,9 @@
   <div class="page-header"> 
   	<h1 id='docs'>Archív dokumentov</h1>
   </div>
-
-
-
-
-<div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-         <h2>
+  <h2>
   	<i class="fa fa-files-o"></i>Dokumentácia
   </h2>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in">
-      <div class="panel-body">
-        
   <ul>
     <a href="http://github.com/">
       <li>Dokumentácia ZS 2014/15</li>
@@ -328,13 +313,6 @@
       <li>Finálna verzia dokumentácie</li>
     </a>
   </ul>
-      </div>
-    </div>
-  </div>
-
-
-  
-
 
   <h2 id='meetings'><i class="fa fa-file-text-o"></i> Zápisnice</h2>
 
