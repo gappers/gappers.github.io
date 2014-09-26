@@ -87,3 +87,7 @@ img.hover:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
+
+   h1, h2 { padding-top: 75px; }
+
+footer { margin: 300px 0 70px; font-size: 14px; 
