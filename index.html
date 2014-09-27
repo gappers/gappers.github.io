@@ -61,18 +61,17 @@
 </div>
 <section>
   <div id='home' class="jumbotron text-center">
-    <h1>
+    <h1 class='thick'>
       Tím č.10 - <strong>Gappers</strong><br>
     </h1>
 
-    <h3>Tímový projekt - FIIT STU 2014/15</h3>
+    <h3 class='thick'>Tímový projekt - FIIT STU 2014/15</h3>
 
-    <h2> Platforma pre monitorovanie chýb a iných udalostí v aplikácii - AppMonitor</h2>
-    <img class="sample-error" src="/images/sample-error.png">
+    <h2 class='thick'> Platforma pre monitorovanie chýb a iných udalostí v aplikácii</h2>
     <br>
 
-    <a href='#project' class="btn btn-primary dont-wrap btn-lg" role="button">Chcem vedieť viac o aplikácii
-      AppMonitor</a>
+    <a href='#project' class="btn btn-success dont-wrap btn-lg" role="button"><div class='thick'>Chcem vedieť viac o aplikácii
+      <strong>AppMonitor</strong></div></a>
   </div>
 </section>
 <div class="container">
@@ -486,7 +485,17 @@
 
 </script>
 <script>
-    $('body').scrollspy({ target: '.navbar-example' })
+    $('body').scrollspy({ target: '.navbar-example' });
+	
+	var jumboHeight = $('.jumbotron').outerHeight();
+	function parallax(){
+	    var scrolled = $(window).scrollTop();
+	    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+	}
+
+	$(window).scroll(function(e){
+	    parallax();
+	});
 </script>
 </body>
 
