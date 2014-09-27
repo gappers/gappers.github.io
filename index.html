@@ -23,8 +23,8 @@
   <script src="///cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
 </head>
 
-<body data-spy='scroll' data-target="#sidebar">
-<!-- HEADER -->
+<body data-spy='scroll' data-target="#navbar-collapse">
+
 <div class="navbar  navbar-default navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -42,6 +42,7 @@
 
         <ul class="nav navbar-nav">
           <li><a href="#home">Home</a></li>
+		  <li><a href="#news">Aktuality</a></li>
           <li><a href="#project">Projekt</a></li>
           <li><a href="#team">Tím</a></li>
           <li><a href="#docs">Dokumenty</a></li>
@@ -74,8 +75,10 @@
       AppMonitor</a>
   </div>
 </section>
-
 <div class="container">
+	    <div class="page-header">
+	<h1 id='news'>Aktuálne</h1></div><div class="row"> 
+<div class="col-md-4">
 <h2>
   <center>Náš progres</center>
 </h2>
@@ -83,7 +86,23 @@
   <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%">
     <span class="sr-only">1% Complete</span>
   </div>
+</div></div>
+
+<div class="col-md-8">
+<h2>
+  <center>Novinky</center>
+</h2>
+<div class='mygrid-wrapper-div'>
+	<ul>
+	<li><em>27.9.2014</em> Vytvorili sme statickú tímovú stránku a pridali sme dokument <a href="/docs/gappers-kompetencie_motivacia.pdf">
+    Komeptencie tímu, motivácia pri výbere tém</a>.</li>
+	<li><em>24.9.2014</em> Nášmu tímu bola pridelená téma "Platforma pre monitorovanie chýb a iných udalostí v aplikácii - AppMonitor".</li>		
+	<li><em>22.9.2014</em> Stretli sme sa prvýkrát spoločne ako tím a dohodli sme sa na výbere tém.</li>
+	</ul>
 </div>
+</div>
+</div>
+
 <section>
 
   <div class="page-header">
@@ -468,6 +487,18 @@
 </script>
 <script>
     $('body').scrollspy({ target: '.navbar-example' })
+</script>
+<script>
+$(document).ready(function () {
+
+    $("nav ul li a[href^='#']").on('click', function(e) {
+       e.preventDefault();
+       $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+
+       // edit: Opera and IE requires the "html" elm. animated
+    });
+});
+
 </script>
 </body>
 

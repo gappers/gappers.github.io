@@ -86,9 +86,21 @@ img.hover:hover {
 }
 
 h1 { padding-top: 75px; }
+
 h2 { padding-top: 5px; }
+
 .map{
-padding-bottom: 100px;}
+	padding-bottom: 100px;}
+	
 img.sample-error{
-max-width:50%;
-padding-bottom: 30px;}
+	max-width:50%;
+	padding-bottom: 30px;}
+
+.mygrid-wrapper-div {
+    overflow: scroll;
+    height: 150px;
+}
+
+.progress{
+	margin-top:50px;
+}
