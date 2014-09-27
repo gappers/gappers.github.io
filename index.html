@@ -6,7 +6,7 @@
   <meta name="description" content="Sme Gappers, 10.tím v Tímovom projekte 2014-2015 na FIIT STU. Vyvíjame aplikáciu CRASHR - Platforma pre monitorovanie chýb a iných udalostí v aplikácii">
   <meta name="keywords" content="FIIT,STU,Gappers,TP">
   <meta name="author" content="Adam Lieskovsky">
-  <link rel='shortcut icon' type='image/x-icon' href='/images/favicon.ico' />
+  <link rel='shortcut icon' type='image/x-icon' href='/images/favicon.ico'/>
   <base href="/">
 
   <title>Gappers | TP 2014/15</title>
@@ -20,7 +20,7 @@
   <!-- JS -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="///cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+  <script src="///cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
 </head>
 
 <body data-spy='scroll' data-target="#sidebar">
@@ -59,24 +59,24 @@
   </div>
 </div>
 <section>
-<div id='home' class="jumbotron text-center">
-  <h1>
-    Tím č.10 - <strong>Gappers</strong><br>
-  </h1>
+  <div id='home' class="jumbotron text-center">
+    <h1>
+      Tím č.10 - <strong>Gappers</strong><br>
+    </h1>
 
-  <h3>Tímový projekt - FIIT STU 2014/15</h3>
+    <h3>Tímový projekt - FIIT STU 2014/15</h3>
 
-  <h2> Platforma pre monitorovanie chýb a iných udalostí v aplikácii - AppMonitor</h2>
-  <img class="sample-error"src="/images/sample-error.png">
-<br>
-  
+    <h2> Platforma pre monitorovanie chýb a iných udalostí v aplikácii - AppMonitor</h2>
+    <img class="sample-error" src="/images/sample-error.png">
+    <br>
+
     <a href='#project' class="btn btn-primary dont-wrap btn-lg" role="button">Chcem vedieť viac o aplikácii
       AppMonitor</a>
-</div>
+  </div>
 </section>
 
 <div class="container">
-	<h2>
+<h2>
   <center>Náš progres</center>
 </h2>
 <div class="progress">
@@ -87,224 +87,238 @@
 <section>
 
   <div class="page-header">
-  	<h1 id='project'>O projekte AppMonitor</h1>
+    <h1 id='project'>O projekte AppMonitor</h1>
   </div>
-   <div class="project">
-  <p>Pri vyvíjaní rôznych aplikácií sa občas stane, že je v kóde chyba a prejaví sa až po tom ako sme nástroj nasadili a
-    ľudia ho už začali používať. Aby sme mohli túto chybu opraviť, potrebujeme ju najskôr zachytiť. V aplikáciách však
-    vznikajú aj iné typy udalostí ako len chyby. Častokrát potrebujeme vedieť napríklad koľko používateľov má práve
-    zobrazenú našu stránku, aký je priemerný čas zobrazenia stránky, koľko spotrebováva naša aplikácia pamäte, koľko
-    ľudí kliklo na toto tlačidlo alebo množstvo ďalších udalostí, ktoré si vieme sami definovať a mohli by nás zaujímať
-    pri vývoji aplikácie alebo biznis analýze údajov, ktoré aplikácia produkuje. Pri takýchto udalostiach nás obvykle
-    zaujíma aký je ich aktuálny stav (počet, trvanie, priemerná hodnota ...), ako sa tento stav menil v poslednom čase a
-    ako koreluje sledovaná udalosť s nejakou inou. Toto sa nám obvykle nechce hľadať niekde v logoch a v prípade
-    problému chceme byť o tejto udalosti informovaný v čase, keď nastala.
-  </p>
+  <div class="project">
+    <p>Pri vyvíjaní rôznych aplikácií sa občas stane, že je v kóde chyba a prejaví sa až po tom ako sme nástroj nasadili
+      a
+      ľudia ho už začali používať. Aby sme mohli túto chybu opraviť, potrebujeme ju najskôr zachytiť. V aplikáciách však
+      vznikajú aj iné typy udalostí ako len chyby. Častokrát potrebujeme vedieť napríklad koľko používateľov má práve
+      zobrazenú našu stránku, aký je priemerný čas zobrazenia stránky, koľko spotrebováva naša aplikácia pamäte, koľko
+      ľudí kliklo na toto tlačidlo alebo množstvo ďalších udalostí, ktoré si vieme sami definovať a mohli by nás
+      zaujímať
+      pri vývoji aplikácie alebo biznis analýze údajov, ktoré aplikácia produkuje. Pri takýchto udalostiach nás obvykle
+      zaujíma aký je ich aktuálny stav (počet, trvanie, priemerná hodnota ...), ako sa tento stav menil v poslednom čase
+      a
+      ako koreluje sledovaná udalosť s nejakou inou. Toto sa nám obvykle nechce hľadať niekde v logoch a v prípade
+      problému chceme byť o tejto udalosti informovaný v čase, keď nastala.
+    </p>
 
-  <p>Cieľom projektu je vytvoriť službu, ktorá by dokázala zachytávať rôzne udalosti, ktoré nastávajú v aplikácii, ako
-    sú napríklad chyby alebo vlastné definované udalosti, monitorovať ich a umožňovať nad nimi robiť základné typy
-    analýz v reálnom čase. Výsledkom projektu by mala byť infraštruktúra na zachytávanie a zbieranie udalostí a
-    rozhranie na ich zobrazovanie a analyzovanie.</p>
+    <p>Cieľom projektu je vytvoriť službu, ktorá by dokázala zachytávať rôzne udalosti, ktoré nastávajú v aplikácii, ako
+      sú napríklad chyby alebo vlastné definované udalosti, monitorovať ich a umožňovať nad nimi robiť základné typy
+      analýz v reálnom čase. Výsledkom projektu by mala byť infraštruktúra na zachytávanie a zbieranie udalostí a
+      rozhranie na ich zobrazovanie a analyzovanie.</p>
 
-  <h2>Prečo?</h2>
+    <h2>Prečo?</h2>
 
-  <p>Možnosť monitorovania svojich nasadených aplikácií a upozornení na problémy vo forme chýb alebo
-    bottleneckov je veľmi vítana funkcionalita pre každého programátora, resp. správcu aplikácie. Po
-    osobnej konzultácii sme boli usmernení v tom, v čom by mala aplikácia vynikať od už existujúcich
-    riešení. Pri nich chýba identifikácia používateľov, ktorí s aplikáciou interagujú. Máme veľké
-    množstvo údajov o používateľoch a ich správaní, dokonca v reálnom čase, ale nevieme priradiť
-    jednotlivé akcie používateľom. Okrem možnosti definície vlastných udalostí vidíme túto možnosť ako
-    veľmi plodnú pre následné využitie. Vedeli by sme tak identifikovať aj vzory správania sa použivateľov v našej aplikácii, čo by viedlo k
-    novým možnostiam jej vylepšenia, prípadne zefektívnenia. Ďalej napr. osobnejší prístup k
-    používateľom aplikácie, kde by sme vedeli pri vhodne zadefinovanej udalosti identifikovať problém,
-    napr. aj neschopnosť/nepochopenie používateľa a následne ho kontaktovať a pomôcť mu alebo sa
-    ospravedlniť za spôsobené problémy, ak chyba nastala na strane servera. </p>
+    <p>Možnosť monitorovania svojich nasadených aplikácií a upozornení na problémy vo forme chýb alebo
+      bottleneckov je veľmi vítana funkcionalita pre každého programátora, resp. správcu aplikácie. Po
+      osobnej konzultácii sme boli usmernení v tom, v čom by mala aplikácia vynikať od už existujúcich
+      riešení. Pri nich chýba identifikácia používateľov, ktorí s aplikáciou interagujú. Máme veľké
+      množstvo údajov o používateľoch a ich správaní, dokonca v reálnom čase, ale nevieme priradiť
+      jednotlivé akcie používateľom. Okrem možnosti definície vlastných udalostí vidíme túto možnosť ako
+      veľmi plodnú pre následné využitie. Vedeli by sme tak identifikovať aj vzory správania sa použivateľov v našej
+      aplikácii, čo by viedlo k
+      novým možnostiam jej vylepšenia, prípadne zefektívnenia. Ďalej napr. osobnejší prístup k
+      používateľom aplikácie, kde by sme vedeli pri vhodne zadefinovanej udalosti identifikovať problém,
+      napr. aj neschopnosť/nepochopenie používateľa a následne ho kontaktovať a pomôcť mu alebo sa
+      ospravedlniť za spôsobené problémy, ak chyba nastala na strane servera. </p>
 
-  <h2>Ako?</h2>
+    <h2>Ako?</h2>
 
-  <p>
-    Jedno z prvotných riešení identifikácie používateľov v aplikáciach kde absentuje používateľský účet,
-    je využitie cookies v prehliadači previazané na rýchle úložisko napr Redis. Pokročilejším spôsobom
-    môže byť identifikácia webového prehliadača, ktorá sa v práci Peter Esckersleyho ukázala ako
-    relatívne funkčná [1]. Aplikácie plánujeme rozšíriť pomocou generovaného javascriptového kódu, pri vybraných jazykoch, máme v pláne
-    vytvoriť moduly, ktoré by umožňovali monitorovanie aj na najnižšej úrovni. 
-    </p><p>
-    [1] Peter Eckersley. 2010. How unique is your web browser?. In Proceedings of the 10th international
-    conference on Privacy enhancing technologies (PETS'10), Mikhail J. Atallah and Nicholas J. Hopper
-    (Eds.). Springer-Verlag, Berlin, Heidelberg, 1-18.</p></div>
+    <p>
+      Jedno z prvotných riešení identifikácie používateľov v aplikáciach kde absentuje používateľský účet,
+      je využitie cookies v prehliadači previazané na rýchle úložisko napr Redis. Pokročilejším spôsobom
+      môže byť identifikácia webového prehliadača, ktorá sa v práci Peter Esckersleyho ukázala ako
+      relatívne funkčná [1]. Aplikácie plánujeme rozšíriť pomocou generovaného javascriptového kódu, pri vybraných
+      jazykoch, máme v pláne
+      vytvoriť moduly, ktoré by umožňovali monitorovanie aj na najnižšej úrovni.
+    </p>
+
+    <p>
+      [1] Peter Eckersley. 2010. How unique is your web browser?. In Proceedings of the 10th international
+      conference on Privacy enhancing technologies (PETS'10), Mikhail J. Atallah and Nicholas J. Hopper
+      (Eds.). Springer-Verlag, Berlin, Heidelberg, 1-18.</p></div>
 
 
 </section>
 <section>
-<div class="page-header">
-  <h1 id="team">Členovia tímu</h1>
-</div>
-	<lead>Náš tím pozostáva zo šiestich úspešných členov predchádzajúceho bakalárskeho štúdia na STU, posledný siedmy člen
-	  študoval na UNIZA. Tím funguje pod
-	  vedením a dohľadom Ing. Jakuba Ševcecha.
-	</lead>
-</br></br>
+  <div class="page-header">
+    <h1 id="team">Členovia tímu</h1>
+  </div>
+  <lead>Náš tím pozostáva zo šiestich úspešných členov predchádzajúceho bakalárskeho štúdia na STU, posledný siedmy člen
+    študoval na UNIZA. Tím funguje pod
+    vedením a dohľadom Ing. Jakuba Ševcecha.
+  </lead>
+  <br><br>
 
-<div class='team'>
-  <div class="row">
-    <div class="col-md-6">
-      <a href="images/barbora.jpg" data-title="Barbora" data-lightbox="Barbora">
-        <img class='img-circle hover' id='barbora' src="/images/barbora-small.jpg" style="width: 140px; height: 140px;">
-      </a>
+  <div class='team'>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="images/barbora.jpg" data-title="Barbora" data-lightbox="Barbora">
+          <img class='img-circle hover' id='barbora' src="/images/barbora-small.jpg" style="width: 140px; height: 140px;">
+        </a>
 
-      <h2 id='team-barbora'>Barbora Brocková</br>
-        <small> Manažment dokumentovania</small>
-      </h2>
-      <div class="skills">
-        <span class="label label-primary">Java</span>
-        <span class="label label-primary">UML</span>
-        <span class="label label-primary">Python</span></div>
+        <h2 id='team-barbora'>Barbora Brocková<br>
+          <small> Manažment dokumentovania</small>
+        </h2>
+        <div class="skills">
+          <span class="label label-primary">Java</span>
+          <span class="label label-primary">UML</span>
+          <span class="label label-primary">Python</span></div>
 
-      <p>Absolvovala bakalárske štúdium na FIIT STU v Bratislave. Venuje sa softvérovej
-        analýze, má profesijné skúsenosti ako softvérová analytička (Jumpsoft) a tiež ako projektová
-        manažérka (Tatrabanka). Absolvovala Summer Startup School v roku 2013, podieľala sa na projekte
-        testingo.sk. Má skúsenosti s programovaním v jazyku Java a Python, technológiami JavaScript a
-        Bootstrap. V projektoch preferuje pozíciu analytičky a dokumentaristky. </p>
-    </div>
-
-    <div class="col-md-6">
-      <a href="images/matej.jpg" data-title="Matej" data-lightbox="Matej"><img class='img-circle hover' src="/images/matej-small.jpg" style="width: 140px; height: 140px;"></a>
-      <h2 id='team-matej'>Matej Čaja</br>
-        <small>Manažment monitorovania</small>
-
-      </h2>
-      <div class="skills">
-        <span class="label label-primary">Java</span>
-        <span class="label label-primary">Ruby on Rails</span>
+        <p>Absolvovala bakalárske štúdium na FIIT STU v Bratislave. Venuje sa softvérovej
+          analýze, má profesijné skúsenosti ako softvérová analytička (Jumpsoft) a tiež ako projektová
+          manažérka (Tatrabanka). Absolvovala Summer Startup School v roku 2013, podieľala sa na projekte
+          testingo.sk. Má skúsenosti s programovaním v jazyku Java a Python, technológiami JavaScript a
+          Bootstrap. V projektoch preferuje pozíciu analytičky a dokumentaristky. </p>
       </div>
 
-      <p>Absolvoval bakalárske štúdium na FIIT STU v Bratislave. V rámci bakalárskeho projektu
-        sa venoval téme Personalizované vyhľadávanie v digitálnej knižnici. Venuje sa tvorbe webových
-        aplikácií prostredníctvom frameworku Ruby on Rails, profesijné skúsenosti má aj s jazykom Java. V
-        projektoch sa podielal na všetkých fázach vývoja softvéru. Vo voľnom čase si rád prehlbuje
-        profesijné vedomosti. </p>
+      <div class="col-md-6">
+        <a href="images/matej.jpg" data-title="Matej" data-lightbox="Matej"><img class='img-circle hover' src="/images/matej-small.jpg" style="width: 140px; height: 140px;"></a>
+
+        <h2 id='team-matej'>Matej Čaja<br>
+          <small>Manažment monitorovania</small>
+
+        </h2>
+        <div class="skills">
+          <span class="label label-primary">Java</span>
+          <span class="label label-primary">Ruby on Rails</span>
+        </div>
+
+        <p>Absolvoval bakalárske štúdium na FIIT STU v Bratislave. V rámci bakalárskeho projektu
+          sa venoval téme Personalizované vyhľadávanie v digitálnej knižnici. Venuje sa tvorbe webových
+          aplikácií prostredníctvom frameworku Ruby on Rails, profesijné skúsenosti má aj s jazykom Java. V
+          projektoch sa podielal na všetkých fázach vývoja softvéru. Vo voľnom čase si rád prehlbuje
+          profesijné vedomosti. </p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <a href="images/martin.jpg" data-title="Martin" data-lightbox="Martin"><img class='img-circle hover' src="/images/martin-small.jpg" style="width: 140px; height: 140px;"></a>
+
+        <h2 id='team-martin'>Martin Číž<br>
+          <small> Manažment plánovania</small>
+        </h2>
+        <div class="skills">
+          <span class="label label-primary">Java</span>
+          <span class="label label-primary">Ruby on Rails</span>
+          <span class="label label-primary">Python</span>
+        </div>
+        <p>Absolvoval bakalárske štúdium na FIIT STU. Počas štúdia vyskúšal rôzne technológie, no
+          orientoval sa najmä na jazyk Java. V roku 2013 absolvoval letnú programátorskú školu Summer
+          Startup School kde sa naučil vytvárať webové aplikácie v jazyku Python, pracovať v tíme a rozšíril si
+          znalosti o metódach vývoja softvéru. Venuje sa vytváraniu webových aplikácií v Ruby on Rails.
+          Preferuje riešiť backend aplikácie.</p>
+      </div>
+
+      <div class="col-md-6">
+        <a href="images/peter.png" data-title="Peter" data-lightbox="Peter"><img class='img-circle hover' src="/images/peter-small.png" style="width: 140px; height: 140px;"></a>
+
+        <h2 id='team-peter'>Peter Kyseľ<br>
+          <small> Manažment rizík</small>
+        </h2>
+        <div class="skills">
+          <span class="label label-primary">Java</span>
+          <span class="label label-primary">C/C++</span>
+          <span class="label label-primary">PHP</span>
+        </div>
+        <p>Absolvoval bakalárske štúdium na Fakulte riadenia a informatiky Žilinskej univerzity. V
+          rámci bakalárskeho projektu vyvíjal desktopovú aplikáciu pre stavebnú spoločnosť. Pracuje pre IT
+          Crowd. Preferuje programovanie v Jave, tvorbu HTML stránok a databázu Oracle. Má tiež skúsenosti
+          s C++, PHP a jazykom Scala. Vo voľnom čase čítam svetovú literatúru (do roku 1989), snowboardujem, píšem
+          články,
+          básne a venujem sa turistike.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <a href="images/adam.jpg" data-title="Adam" data-lightbox="Adam"><img id='adam' class='img-circle hover' src="/images/adam-small.jpg" style="width: 140px; height: 140px;"></a>
+
+        <h2 id='team-adam'>Adam Lieskovský<br>
+          <small> Manažment podpory vývoja a integrácie</small>
+        </h2>
+        <div class="skills">
+          <span class="label label-primary">Ruby on Rails</span>
+          <span class="label label-primary">Python</span>
+          <span class="label label-primary">SQL</span>
+        </div>
+        <p>Absolvoval bakalárske štúdium na FIIT STU. V rámci bakalárskeho projektu sa
+          venoval podpore tvorby dopytu v systéme Annota. Táto práca povzbudila jeho už i tak existujúci
+          zaújem o webové aplikácie, najme ich backendovú časť. Pracuje s Ruby on Rails, ale má skúsenosti aj
+          s Pythonom – stojí za projektom testingo.sk. Pozná Javu, Bootstrap, Coffeescript,
+          jQuery, git, AngularJS. Má profesné skúsenosti s relačnými
+          databázami (Oracle, MySql, Postgres), ale rovnako aj NoSQL technológiami - Elasticsearch, Redis.</p>
+      </div>
+
+
+      <div class="col-md-6">
+        <a href="images/daniel.jpg" data-title="Daniel" data-lightbox="Daniel"><img class='img-circle hover' src="/images/daniel-small.jpg" style="width: 140px; height: 140px;"></a>
+
+        <h2 id='team-daniel'>Daniel Uderman<br>
+          <small>Manažment komunikácie</small>
+        </h2>
+        <div class="skills">
+          <span class="label label-primary">C/C++</span>
+          <span class="label label-primary">PHP</span>
+          <span class="label label-primary">Java</span>
+        </div>
+
+        <p>Absolvoval bakalárske štúdium na FIIT STU. V rámci bakalárskeho projektu sa
+          venoval vysokovýkonnému distribuovanému počítaniu s využitím algoritmov inšpirovaných hmyzom.
+          Profesionálne sa venuje tvorbe ecommerce stránok v PHP. V priebehu štúdia získal aj skúsenosti s
+          programovaním v C/C++, Jave a v jazyku JavaScript. Má skúsenosti tiež s databázovým systémom
+          MySQL.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <a href="images/unknown.png" data-title="Michal" data-lightbox="Michal"><img class='img-circle hover' src="/images/unknown.png" style="width: 140px; height: 140px;"></a>
+
+        <h2 id='team-michal'>Michal Viskup<br>
+
+          <small>Manažment kvality a vedúci tímu</small>
+        </h2>
+        <div class="skills">
+          <span class="label label-primary">Java/J2EE</span>
+          <span class="label label-primary">C/C++</span>
+          <span class="label label-primary">CUDA</span>
+        </div>
+
+        <p> Absolvoval bakalárske štúdium na FIIT STU. V rámci bakalárskeho projektu sa
+          zaoberal využitím grafickej procesorovej jednotky pre podporu výpočtu pri segmentácií obrazu.
+          Zaujíma sa o spracovanie obrazu, počítačové videnie a strojové učenie. Pracuje pre spoločnosť
+          vyvíjajúcu informačné systémy pre oblasť e-government, poštových a bankových služieb.
+          Profesionálne programuje v Jave, má skúsenosti s technológiami spĺňajúcimi Java Enterprise Edition
+          špecifikáciu. V rámci projektov tiež programoval v C/C++. Voľný čas venuje priateľke a návštevám
+          posilňovne.</p>
+      </div>
+
+      <div class="col-md-6">
+        <a href="images/unknown.png" data-title="Jakub" data-lightbox="Jakub"><img class='img-circle hover' src="/images/unknown.png" style="width: 140px; height: 140px;"></a>
+
+        <h2 id='team-jakub'>Jakub Ševcech<br>
+          <small>Mentor tímu</small>
+        </h2>
+
+        <br><br>
+
+      </div>
     </div>
   </div>
 
-
-  <div class="row">
-    <div class="col-md-6">
-      <a href="images/martin.jpg" data-title="Martin" data-lightbox="Martin"><img class='img-circle hover' src="/images/martin-small.jpg" style="width: 140px; height: 140px;"></a>
-      <h2 id='team-martin'>Martin Číž</br>
-        <small> Manažment plánovania</small>
-      </h2>
-      <div class="skills">
-        <span class="label label-primary">Java</span>
-        <span class="label label-primary">Ruby on Rails</span>
-        <span class="label label-primary">Python</span>
-      </div>
-      <p>Absolvoval bakalárske štúdium na FIIT STU. Počas štúdia vyskúšal rôzne technológie, no
-        orientoval sa najmä na jazyk Java. V roku 2013 absolvoval letnú programátorskú školu Summer
-        Startup School kde sa naučil vytvárať webové aplikácie v jazyku Python, pracovať v tíme a rozšíril si
-        znalosti o metódach vývoja softvéru. Venuje sa vytváraniu webových aplikácií v Ruby on Rails.
-        Preferuje riešiť backend aplikácie.</p>
-    </div>
-
-    <div class="col-md-6">
-      <a href="images/peter.png" data-title="Peter" data-lightbox="Peter"><img class='img-circle hover' src="/images/peter-small.png" style="width: 140px; height: 140px;"></a>
-      <h2 id='team-peter'>Peter Kyseľ</br>
-        <small> Manažment rizík</small>
-      </h2>
-      <div class="skills">
-        <span class="label label-primary">Java</span>
-        <span class="label label-primary">C/C++</span>
-        <span class="label label-primary">PHP</span>
-      </div>
-      <p>Absolvoval bakalárske štúdium na Fakulte riadenia a informatiky Žilinskej univerzity. V
-        rámci bakalárskeho projektu vyvíjal desktopovú aplikáciu pre stavebnú spoločnosť. Pracuje pre IT
-        Crowd. Preferuje programovanie v Jave, tvorbu HTML stránok a databázu Oracle. Má tiež skúsenosti
-        s C++, PHP a jazykom Scala. Vo voľnom čase čítam svetovú literatúru (do roku 1989), snowboardujem, píšem články,
-        básne a venujem sa turistike.</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6">
-      <a href="images/adam.jpg" data-title="Adam" data-lightbox="Adam"><img id='adam' class='img-circle hover' src="/images/adam-small.jpg" style="width: 140px; height: 140px;"></a>
-      <h2 id='team-adam'>Adam Lieskovský</br>
-        <small> Manažment podpory vývoja a integrácie</small>
-      </h2>
-      <div class="skills">
-        <span class="label label-primary">Ruby on Rails</span>
-        <span class="label label-primary">Python</span>
-        <span class="label label-primary">SQL</span>
-      </div>
-      <p>Absolvoval bakalárske štúdium na FIIT STU. V rámci bakalárskeho projektu sa
-        venoval podpore tvorby dopytu v systéme Annota. Táto práca povzbudila jeho už i tak existujúci
-        zaújem o webové aplikácie, najme ich backendovú časť. Pracuje s Ruby on Rails, ale má skúsenosti aj
-        s Pythonom – stojí za projektom testingo.sk. Pozná Javu, Bootstrap, Coffeescript,
-        jQuery, git, AngularJS. Má profesné skúsenosti s relačnými
-        databázami (Oracle, MySql, Postgres), ale rovnako aj NoSQL technológiami - Elasticsearch, Redis.</p>
-    </div>
-
-
-    <div class="col-md-6">
-      <a href="images/daniel.jpg" data-title="Daniel" data-lightbox="Daniel"><img class='img-circle hover' src="/images/daniel-small.jpg" style="width: 140px; height: 140px;"></a>
-      <h2 id='team-daniel'>Daniel Uderman</br>
-        <small>Manažment komunikácie</small>
-      </h2>
-      <div class="skills">
-        <span class="label label-primary">C/C++</span>
-        <span class="label label-primary">PHP</span>
-        <span class="label label-primary">Java</span>
-      </div>
-
-      <p>Absolvoval bakalárske štúdium na FIIT STU. V rámci bakalárskeho projektu sa
-        venoval vysokovýkonnému distribuovanému počítaniu s využitím algoritmov inšpirovaných hmyzom.
-        Profesionálne sa venuje tvorbe ecommerce stránok v PHP. V priebehu štúdia získal aj skúsenosti s
-        programovaním v C/C++, Jave a v jazyku JavaScript. Má skúsenosti tiež s databázovým systémom
-        MySQL.</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6">
-      <a href="images/unknown.png" data-title="Michal" data-lightbox="Michal"><img class='img-circle hover' src="/images/unknown.png" style="width: 140px; height: 140px;"></a>
-      <h2 id='team-michal'>Michal Viskup</br>
-
-        <small>Manažment kvality a vedúci tímu</small>
-      </h2>
-      <div class="skills">
-        <span class="label label-primary">Java/J2EE</span>
-        <span class="label label-primary">C/C++</span>
-        <span class="label label-primary">CUDA</span>
-      </div>
-
-      <p> Absolvoval bakalárske štúdium na FIIT STU. V rámci bakalárskeho projektu sa
-        zaoberal využitím grafickej procesorovej jednotky pre podporu výpočtu pri segmentácií obrazu.
-        Zaujíma sa o spracovanie obrazu, počítačové videnie a strojové učenie. Pracuje pre spoločnosť
-        vyvíjajúcu informačné systémy pre oblasť e-government, poštových a bankových služieb.
-        Profesionálne programuje v Jave, má skúsenosti s technológiami spĺňajúcimi Java Enterprise Edition
-        špecifikáciu. V rámci projektov tiež programoval v C/C++. Voľný čas venuje priateľke a návštevám
-        posilňovne.</p>
-    </div>
-
-    <div class="col-md-6">
-      <a href="images/unknown.png" data-title="Jakub" data-lightbox="Jakub"><img class='img-circle hover' src="/images/unknown.png" style="width: 140px; height: 140px;"></a>
-      <h2 id='team-jakub'>Jakub Ševcech</br>
-        <small>Mentor tímu</small>
-      </h2>
-
-      </br></br>
-      <p> </p>
-    </div>
-
-  </div>
-</div>
-
-</scetion>
+</section>
 <section>
-  <div class="page-header"> 
-  	<h1 id='docs'>Archív dokumentov</h1>
+  <div class="page-header">
+    <h1 id='docs'>Archív dokumentov</h1>
   </div>
   <h2>
-  	<i class="fa fa-files-o"></i>Dokumentácia
-  </h2> 
+    <i class="fa fa-files-o"></i>Dokumentácia
+  </h2>
   <ul>
     <a href="http://github.com/">
       <li>Dokumentácia ZS 2014/15</li>
@@ -341,7 +355,7 @@
         <td>2</td>
         <td>13.11.2014</td>
         <td>Martin</td>
-        <td><a href="http://github.com/">Stretnuti Novembrové</td>
+        <td><a href="http://github.com/">Stretnuti Novembrové</a></td>
       </tr>
 
       <tr>
@@ -378,7 +392,7 @@
         <td>2</td>
         <td>13.11.2014</td>
         <td>Martin</td>
-        <td><a href="http://github.com/">Šprint Madrid</td>
+        <td><a href="http://github.com/">Šprint Madrid</a></td>
       </tr>
 
       <tr>
@@ -397,31 +411,32 @@
     <a href="/docs/gappers-kompetencie_motivacia.pdf">
       <li>Komeptencie tímu, motivácia pri výbere tém</li>
     </a>
-    
+
   </ul>
 </section>
 <section>
 
-<div class="page-header">
-  <h1 id='contact'>Kontaktujte nás</h1>
-</div>
-<p>V prípade akýchkoľvek otázok, nápadov, pripomienok nás môžete kontaktovať na
-  <a href="mailto:gappers-tp-fiit@googlegroups.com"> gappers-tp-fiit[at]googlegroups.com</a>.
-</p>
+  <div class="page-header">
+    <h1 id='contact'>Kontaktujte nás</h1>
+  </div>
+  <p>V prípade akýchkoľvek otázok, nápadov, pripomienok nás môžete kontaktovať na
+    <a href="mailto:gappers-tp-fiit@googlegroups.com"> gappers-tp-fiit[at]googlegroups.com</a>.
+  </p>
 
 
-<h2>Adresa</h2>
-<address>
-  Slovenská technická univerzita v Bratislave</br>
-  Fakulta informatiky a informačných technológií</br>
-  Ilkovičova 2</br>
-  842 16 Bratisla
-  va 4
-</address>
-<div class='map'>
-<div class="google-maps">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10646.949947576015!2d17.071875999999996!3d48.153866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8bec79f0f3a9%3A0x8b585229fc0ae860!2sFaculty+of+Informatics+and+Information+Technologies+of+Slovak+University+of+Technology!5e0!3m2!1sen!2ssk!4v1410786029145" width="800" height="400" frameborder="0" style="border:0"></iframe>
-</div></div>
+  <h2>Adresa</h2>
+  <address>
+    Slovenská technická univerzita v Bratislave<br>
+    Fakulta informatiky a informačných technológií<br>
+    Ilkovičova 2<br>
+    842 16 Bratisla
+    va 4
+  </address>
+  <div class='map'>
+    <div class="google-maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10646.949947576015!2d17.071875999999996!3d48.153866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8bec79f0f3a9%3A0x8b585229fc0ae860!2sFaculty+of+Informatics+and+Information+Technologies+of+Slovak+University+of+Technology!5e0!3m2!1sen!2ssk!4v1410786029145" width="800" height="400" frameborder="0" style="border:0"></iframe>
+    </div>
+  </div>
 
 </section>
 
@@ -430,7 +445,7 @@
 
 <div class="footer">
   <div class="container">
-    <p class="text-muted">© 2014 Gappers <i class="fa fa-coffee"></i> <a href="http://www.fiit.stuba.sk/"> FIIT STU</a>
+    <p class="text-muted"><center>© 2014 Gappers <i class="fa fa-coffee"></i> <a href="http://www.fiit.stuba.sk/"> FIIT STU</center></a>
     </p>
   </div>
 </div>
@@ -452,7 +467,7 @@
 
 </script>
 <script>
-$('body').scrollspy({ target: '.navbar-example' })
+    $('body').scrollspy({ target: '.navbar-example' })
 </script>
 </body>
 
