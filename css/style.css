@@ -134,3 +134,7 @@ img.sample-error{
 #app-name{
     padding-top: 25px;
 }
+
+.mygrid-wrapper-div ul li{
+    padding-bottom: 10px;
+}
