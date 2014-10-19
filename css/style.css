@@ -1,4 +1,4 @@
-body{ 
+body{
 	padding-top: 40px;
 	height: 100%;
   	position: relative;
@@ -29,17 +29,17 @@ body{
 @media (min-width: 1200px) {
     #navbar-top .container {
         width:1170px;
-    }   
+    }
 }
 @media (min-width: 979px) and (max-width: 1200px) {
     #navbar-top .container {
         width:960px;
-    }   
+    }
 }
 @media (min-width: 768px) and (max-width: 979px) {
     #navbar-top .container {
         width:744px;
-    }   
+    }
 }
 
 img {
@@ -91,7 +91,7 @@ h2 { padding-top: 5px; }
 
 .map{
 	padding-bottom: 100px;}
-	
+
 img.sample-error{
 	max-width:50%;
 	padding-bottom: 30px;}
@@ -125,6 +125,20 @@ img.sample-error{
     text-shadow: #444 0 2px 2px;
     background:transparent;
 
+}
+
+.parallax {
+	height: 600px;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.parallax-2 {
+	background-image: url("/images/group-photo.jpg");
 }
 
 .thick{
