@@ -127,20 +127,6 @@ img.sample-error{
 
 }
 
-.parallax {
-	height: 600px;
-	width: 100%;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}
-
-.parallax-2 {
-	background-image: url("/images/group-photo.jpg");
-}
-
 .thick{
     font-weight: 700;
 }
@@ -157,4 +143,9 @@ img.sample-error{
 }
 .centered{
     text-align: center;
+}
+
+.team-photo{
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
