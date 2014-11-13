@@ -1,0 +1,151 @@
+body{
+	padding-top: 40px;
+	height: 100%;
+  	position: relative;
+	}
+
+.text-muted {
+	color: #777;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+	font-size:13px;
+}
+
+.google-maps {
+        position: relative;
+        padding-bottom: 45%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+.google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+}
+
+@media (min-width: 1200px) {
+    #navbar-top .container {
+        width:1170px;
+    }
+}
+@media (min-width: 979px) and (max-width: 1200px) {
+    #navbar-top .container {
+        width:960px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    #navbar-top .container {
+        width:744px;
+    }
+}
+
+img {
+  border: 0 none;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.row
+{
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.team .col-md-6{
+    text-align: center;
+}
+
+.team .col-md-6 p{
+    text-align: justify;
+}
+
+.project p{
+    text-align: justify;
+}
+.team .skills{
+    padding-bottom: 10px;
+}
+
+.collapsed{
+    display             : inline-block;
+    border              : 0;
+}
+
+.dont-wrap{
+    white-space: normal;
+}
+
+img.hover:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+h1 { padding-top: 75px; }
+
+h2 { padding-top: 5px; }
+
+.map{
+	padding-bottom: 100px;}
+
+img.sample-error{
+	max-width:50%;
+	padding-bottom: 30px;}
+
+.mygrid-wrapper-div {
+    overflow: scroll;
+    height: 150px;
+}
+
+.progress{
+	margin-top:50px;
+}
+.workflow{
+	text-align:center;
+}
+
+.bg {
+    background: url('/images/google-data.jpg') no-repeat center center;
+    position: fixed;
+    width: 100%;
+    height: 600px; /*same height as jumbotron */
+    top:0;
+    left:0;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+.jumbotron {
+    height: 600px;
+    color: white;
+    text-shadow: #444 0 2px 2px;
+    background:transparent;
+
+}
+
+.thick{
+    font-weight: 700;
+}
+
+#app-name{
+    padding-top: 25px;
+}
+
+.mygrid-wrapper-div ul li{
+    padding-bottom: 10px;
+}
+.gappers-explained{
+    font-size: 13px;
+}
+.centered{
+    text-align: center;
+}
+
+.team-photo{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
