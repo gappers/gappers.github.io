@@ -109,7 +109,7 @@ img.sample-error{
 }
 
 .bg {
-    background: url('images/google-data.jpg') no-repeat center center;
+    background: url('http://gappers.github.io/images/google-data.jpg') no-repeat center center;
     position: fixed;
     width: 100%;
     height: 600px; /*same height as jumbotron */
